@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* @import url("reset.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #fcf9ee;
+}
+
+ul { list-style: none;}
+address {font-style: normal;}
+img {vertical-align: top;}
+
+a:link {text-decoration: none; color: inherit;}
+a:visited {text-decoration: none; color: inherit;}
+a:hover {text-decoration: none; color: inherit;}
+a:active {text-decoration: none; color: inherit;}
+
+.inner {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header */
+
+header { 
+    height: 215px;
+ }
+ 
+ header h1 {
+     width: 259px;
+     margin: 95px auto;
+ }
+ header h1 a {
+     display: block;
+     height: 59px;
+     background: url(../images/logo.png) no-repeat;
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+ }
+ 
+ #top_menu {
+     display: flex;
+     position: absolute;
+     top: -70px; right: 0;
+ }
+ 
+ #top_menu li {
+     margin: 0 22px ;
+ }
+ 
+ #top_menu li:last-child {
+     margin-right: 0;
+ }
+ 
+ #top_menu img {
+     height: 22px;
+ } 
+ 
+ #pc_nav {
+     position: absolute;
+     width: 100%;
+     z-index: 10006;
+ }
+ 
+ #pc_nav #gnb {
+     max-width: 1000px;
+     margin: 0 auto ;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+ }
+ 
+ #pc_nav  #gnb > li > a {
+     display: block;
+     height: 50px;
+     line-height: 50px;
+     padding: 0 20px;
+     font-size: 23px;
+     font-weight: 500;
+ }
+ 
+ 
+ .submenu {
+     display: none;
+     font-size: 19px;
+ }
+ .submenu a {
+     display: block;
+     height: 45px;
+     line-height: 45px;
+     transition: all 0.3s;
+ }
+ 
+ .submenu a:hover {
+     opacity: 0.7;
+ }
+ 
+ #gnb_bg  {
+     background-color:/* rgba(252,249,238,0.7)*/#fcf9ee;
+     width: 100%;
+     height: 190px;
+     position: absolute;
+     top: 299px;
+     left: 0;
+     z-index: 10005;
+     display: none;
+ }
+ 
+ #ham {
+     font-size: 25px;
+     position: fixed;
+     top: 15px;
+     right: 20px;
+     display: none;
+     z-index: 10002;
+ }
+ 
+ #close {
+     font-size: 25px;
+     position: fixed;
+     top: 16px;
+     right: -50px;
+ }
+ 
+ /* 모바일 메뉴 */
+ 
+ #m_nav {
+     display: none;
+     background-color: #ffffff;
+     position: fixed;
+     top: 0;
+     right: -50%;
+     width: 50%;
+     height: 100%;
+     z-index: 10000;
+     text-align: right;
+     padding-right: 20px;
+     padding-top: 80px;
+ }
+ 
+ 
+ #m_gnb > li > a {
+     display: block;
+     height: 50px;
+     line-height: 50px;
+     font-size: 20px;
+     font-weight: 400;   
+ }
+ 
+ .m_submenu {
+     margin-bottom: 20px;
+     display: none;
+ }
+ 
+ .m_submenu a {
+     display: block;
+     height: 40px;
+     line-height: 40px;
+     padding-right: 20px;
+ }
+ 
+ .m_submenu a:hover {
+     opacity: 0.7;
+ }
+ 
+ 
+
+/* 모바일 메뉴 끝 */
+
+/* footer st */
+
+#ft_wrap {
+    background-color: #ffffff;
+}
+
+footer {
+    padding: 47px 0;
+    font-weight: 400;
+}
+
+#c_logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#ft1 {
+    margin-right: 20px;
+}
+
+#c_logo_b {
+    display: flex;
+    width: 355px;
+}
+
+#c_logo_b div {
+    margin-right: 20px;
+}
+
+#c_logo #ft2 {
+    width: 208px;
+    text-align: center;
+}
+
+#c_logo #ft3 {
+    font-weight: 500;
+}
+
+
+#add_wrap {
+    
+    line-height: 22px;
+}
+
+
+/* footer end */
+
+
+#sub_v_wrap {
+    height: 240px;
+    background: url("../images/sub_menu_visual.jpg") no-repeat center;
+    background-size: cover ;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#sub_v_wrap h2 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#sub_v_wrap p {
+    position: absolute;
+    bottom: 10px; right: 20px;
+    font-size: 14px;
+}
+
+#sub_v_wrap div {
+    height: 100%;
+}
+
+#sub_cont_wrap {
+    padding: 50px 0;
+}
+
+#tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+#tab li {
+    width: 204px; height: 46px;
+    text-align: center;
+    line-height:46px;
+    margin: 0 10px;
+    background-color: #d8d8d8;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#tab li:hover {
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+#tab li.on {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* 1코롱 */
+
+#sub_m_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sub_m_list li {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+#sub_m_list li a {
+    display: block;
+    height: 100%;
+}
+
+/* 2배스앤바디 */
+
+#sub_m_list2 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sub_m_list2 li {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+#sub_m_list2 li a {
+    display: block;
+    height: 100%;
+}
+
+/* 3홈프레그넌스 */
+
+#sub_m_list3 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sub_m_list3 li {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+#sub_m_list3 li a {
+    display: block;
+    height: 100%;
+}
+
+/* 4맨즈 */
+
+#sub_m_list4 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sub_m_list4 li {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+#sub_m_list4 li a {
+    display: block;
+    height: 100%;
+}
+
+/**/
+
+.s_img_wrap img{
+    width: 100%;
+}
+
+.s_txt_wrap h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.s_txt_wrap {
+    margin: 20px auto;
+}
+
+.s_txt_wrap p span {
+    font-family: "굴림";
+}
+
+ul.con {
+    display: none;
+}
+
+.con.on {
+    display: block;
+}
+
+.btn_top {
+    position: fixed;
+    right: 30px;
+    bottom:40px;
+    font-size: 35px;
+    display: none;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조말론</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="script/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="script/script.js"></script>
+
+</head>
+<body>
+    
+    <div id="header_wrap">
+        <header class="inner">
+            <h1><a href="index.html">logo</a></h1>
+            <ul id="top_menu">
+                <li><a href="javasciprt:void(0)"><img src="images/01.png" alt="검색"></a></li>
+                <li><a href="javasciprt:void(0)"><img src="images/02.png" alt="로그인"></a></li>
+                <li><a href="javasciprt:void(0)"><img src="images/03.png" alt="장바구니"></a></li>
+            </ul>
+            <!-- 로그인후에는 아래가 출력됩니다 -->
+            <!-- 
+                <ul>
+                    <li><a href="javasciprt:void(0)"> 검색</a></li>
+                    <li><a href="javasciprt:void(0)">마이페이지</a></li>
+                    <li><a href="javasciprt:void(0)">장바구니</a></li>
+                </ul>
+            -->
+            <nav id="pc_nav">
+                <ul id="gnb">
+                    <li>
+                        <a href="./sub_menu/submenu.html">제품 보기</a>
+                        <ul class="submenu">
+                            <li><a href="./sub_menu/submenu.html">코롱</a></li>
+                            <li><a href="./sub_menu/submenu.html">배스 앤 바디</a></li>
+                            <li><a href="./sub_menu/submenu.html">홈 프레그런스</a></li>
+                            <li><a href="./sub_menu/submenu.html">맨즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">선물 추천</a>
+                        <ul class="submenu">
+                            <li><a href="javasciprt:void(0)">세트구성</a></li>
+                            <li><a href="javasciprt:void(0)">베스트 셀러</a></li>
+                            <li><a href="javasciprt:void(0)">신제품</a></li>
+                            <li><a href="javasciprt:void(0)">미니어처</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_brand/sub_brand.html">브랜드 소개</a>
+                        <ul class="submenu">
+                            <li><a href="./sub_brand/sub_brand.html">조말론 기원</a></li>
+                            <li><a href="./sub_brand/sub_brand.html">자선활동</a></li>
+                            <li><a href="./sub_brand/sub_brand.html">센트 스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">매장안내</a>
+                        <ul class="submenu">
+                            <li><a href="javasciprt:void(0)">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="javasciprt:void(0)">Q &amp; A</a></li>
+                            <li><a href="javasciprt:void(0)">Notice</a></li>
+                            <li><a href="javasciprt:void(0)">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 모바일 메뉴 -->
+            <nav id="m_nav">
+                <ul id="m_gnb">
+                    <li>
+                        <a href="#">제품보기</a>
+                        <ul class="m_submenu">
+                            <li><a href="./sub_menu/submenu.html">코롱</a></li>
+                            <li><a href="./sub_menu/submenu.html">배스 앤 바디</a></li>
+                            <li><a href="./sub_menu/submenu.html">홈 프레그런스</a></li>
+                            <li><a href="./sub_menu/submenu.html">맨즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">선물추천</a>
+                        <ul class="m_submenu">
+                            <li><a href="javasciprt:void(0)">세트구성</a></li>
+                            <li><a href="javasciprt:void(0)">베스트 셀러</a></li>
+                            <li><a href="javasciprt:void(0)">신제품</a></li>
+                            <li><a href="javasciprt:void(0)">미니어처</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드소개</a>
+                        <ul class="m_submenu">
+                            <li><a href="./sub_brand/sub_brand.html">조말론 기원</a></li>
+                            <li><a href="./sub_brand/sub_brand.html">자선활동</a></li>
+                            <li><a href="./sub_brand/sub_brand.html">센트 스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장안내</a>
+                        <ul class="m_submenu">
+                            <li><a href="javasciprt:void(0)">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="m_submenu">
+                            <li><a href="javasciprt:void(0)">Q &amp; A</a></li>
+                            <li><a href="javasciprt:void(0)">Notice</a></li>
+                            <li><a href="javasciprt:void(0)">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="close">
+                    <a href="javasciprt:void(0)"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+            </nav>
+            <!-- 모바일 네비 끝 -->
+            <div id="ham"><a href="javasciprt:void(0)"><i class="fa-solid fa-bars"></i></a></div>
+        </header>
+        <div id="gnb_bg"></div>
+    </div>
+
+
+    <div id="visual">
+        <ul class="slider">
+            <li><img src="images/slide1.jpg" alt="슬1"></li>
+            <li><img src="images/slide2.jpg" alt="슬2"></li>
+            <li><img src="images/slide3.jpg" alt="슬3"></li>
+        </ul>
+    </div>
+
+    <div id="cont_menu" class="inner">
+        <div class="title_wrap">
+            <h2>코롱 인텐스</h2>
+        </div>
+        <div>
+            <ul id="m_list">
+                <li>
+                    <a href="./sub_menu/submenu.html">
+                        <div class="img_wrap">
+                            <img src="images/menu01.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <h3>Dark Anber & Ginger Lily <br> 
+                                다크앰버 앤 진저릴리</h3>
+                            <p><span>&#92;</span>305,000  100ML</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./sub_menu/submenu.html">
+                        <div class="img_wrap">
+                            <img src="images/menu02.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <h3>Tuberose Angelica <br>
+                                튜버로즈 안젤리카</h3>
+                            <p><span>&#92;</span>305,000  100ML</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./sub_menu/submenu.html">
+                        <div class="img_wrap">
+                            <img src="images/menu03.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <h3>Velvet Rose & Oud <br>
+                                벨벳 로즈 앤 오드</h3>
+                            <p><span>&#92;</span>305,000  100ML</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./sub_menu/submenu.html">
+                        <div class="img_wrap">
+                            <img src="images/menu04.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <h3>Scarlet Poppy <br>
+                                스칼렛 포피</h3>
+                            <p><span>&#92;</span>305,000  100ML</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="store_wrap">
+        <img src="images/new.jpg" alt="신제품배경">
+        <a href="./sub_menu/submenu.html" id="btn_more">신제품 보기</a>
+    </div> 
+
+
+    <div id="info" class="inner">
+        <div id="info_cont_wrap">
+            <div class="info_cont">
+                <div class="info_img_wrap">
+                    <img src="images/info01.jpg" alt="info_img1">
+                </div>
+                <div class="info_txt_wrap">
+                    <h3>브리티쉬 헤리티지</h3>
+                    <p>
+                        조 말론 런던은 영국에 뿌리를 두었습니다. 한 폭의 그림 같은 마을
+                        부터 구불구불한 언덕, 바람이 불어오는 해변 그리고 최신 예술, 문
+                        화, 디자인에 이르기까지, 우리는 영국의 가장 좋은 것들로부터 영
+                        감을 받아 영국의 본질을 담아냈어요. 모든 제품을 관통하는 영국
+                        특유의 위트, 창의적인 재치, 그리고 우아하면서 매력적인 감각을
+                        발견하실 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="info_cont">
+                <div class="info_img_wrap">
+                    <img src="images/info02.jpg" alt="info_img2">
+                </div>
+                <div class="info_txt_wrap">
+                    <h3>자선활동 미션</h3>
+                    <p>
+                        조말론은 개인적인 고통을 안고 살아가는 이들에게 자연이 줄 수 있
+                        는 긍정적인 효과를 널리 알릴 수 있도록 최선을 다하고 있습니다.
+                        이를 위해 정신건강 문제 해결을 위한 재단(Shining A Light On M
+                        ental Health Foundation)을 설립하고, 본 재단은 다양한 영감을
+                        선사하는 자선단체들과 함께 진행하는 특별 프로젝트를 통해 정신건
+                        강 관련 문제를 겪고 있는 개인과 가정에 필요한 도움을 지원합니다.  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="search_wrap">
+            <div id="search" class="inner">
+                <div id="sc_img_wrap">
+                    <img src="images/store.jpg" alt="매장사진">
+                </div>
+                <div id="sc_txt_wrap">
+                    <h3><img src="images/logo.png" alt="logo"></h3>
+                    <div id="sc_txt_s_wrap" >
+                        <p><img src="images/loca.svg" alt="loca"> 매장 검색</p>
+                        <div id="search-bar">
+                            <input type="search" placeholder="Search">
+                            <button type="submit" class="search-button"></button>
+                        </div>
+                    </div>
+                    <a href="javasciprt:void(0)">가까운 매장찾기</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="contents" class="inner">
+            <div id="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li>
+                        <a href="javasciprt:void(0)">첫 구매 코드입력시 웰컴기프트</a>
+                        <span>2023.01.17</span>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">기간한정 모든 구매고객 코롱샘플증정</a>
+                        <span>2023.01.17</span>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">15만원 이상 구매시 선택 샘플 3종 증정</a>
+                        <span>2023.01.17</span>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">선착순 보자기 포장 서비스 제공</a>
+                        <span>2023.01.17</span>
+                    </li>
+                    <li>
+                        <a href="javasciprt:void(0)">모든주문 무료배송</a>
+                        <span>2023.01.17</span>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div id="event">
+                <a href="javasciprt:void(0)"><img src="images/bn_event.jpg" alt="이벤트"></a>
+            </div>
+        </div>
+        
+
+        <div id="ft_wrap">
+            <footer class="inner">
+
+                <div id="c_logo">
+                    <div id="ft1">
+                        <img src="images/f_logo.jpg" alt="flogo">
+                    </div>
+                    <div id="c_logo_b">
+                        <div id="ft2">
+                            <p>© Jo Malone London 2021</p>
+                        </div>
+                        <div id="ft3">
+                            <p><a href="javasciprt:void(0)">개인정보보호</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="add_wrap">
+                    <div>
+                    이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 <br>
+                    사업자등록번호: 211-81-71889 <br>
+                    통신판매업신고번호: 강남-15737호 <br>
+                    사업자정보조회<br>
+                    <span>고객관리지원팀: <a href="javasciprt:void(0)">(02) 6971-3228</a> , <a href="javasciprt:void(0)">consumercare-kr@jomalone.com</a></span> <br>
+                    호스팅서비스 사업자: ㈜엘지유플러스 <br>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+        <a href="javascript:void(0);" class="btn_top">
+            <i class="fa-solid fa-circle-arrow-up" style="color: #bbb9ae;"></i>
+        </a>
+
+        <div id="popup">
+            
+        </div>
+
+</body>
+</html>
