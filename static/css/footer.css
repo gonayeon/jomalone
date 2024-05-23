@@ -1,0 +1,39 @@
+#ft_wrap {
+    background-color: #ffffff;
+}
+
+footer {
+    padding: 47px 0;
+    font-weight: 400;
+}
+
+#c_logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#ft1 {
+    margin-right: 20px;
+}
+
+#c_logo_b {
+    display: flex;
+    width: 355px;
+}
+
+#c_logo_b div {
+    margin-right: 20px;
+}
+
+#c_logo #ft2 {
+    width: 208px;
+    text-align: center;
+}
+
+#c_logo #ft3 {
+    font-weight: 500;
+}
+
+#add_wrap {
+    line-height: 22px;
+}

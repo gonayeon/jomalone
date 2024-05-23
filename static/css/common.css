@@ -1,0 +1,58 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url(/static/font/NotoSansKR-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url(/static/font/NotoSansKR-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url(/static/font/NotoSansKR-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url(/static/font/NotoSansKR-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Noto Sans KR", sans-serif;
+    src: url(/static/font/NotoSansKR-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Noto Sans KR", sans-serif;
+    src: url(/static/font/NotoSansKR-SemiBold.ttf);
+    font-weight: 600;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -1px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #fcf9ee;
+}
+
+.inner {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn_top {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    font-size: 35px;
+    display: none;
+}

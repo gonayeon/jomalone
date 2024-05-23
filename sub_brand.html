@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조말론 - 브랜드소개</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="/static/js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/sub_brand.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="/static/js/common.js"></script>
+</head>
+<body>
+    <div id="header_wrap">
+        <header class="inner">
+            <h1><a href="/">logo</a></h1>
+            <ul id="top_menu">
+                <li><a href="#"><img src="/static/images/01.png" alt="검색"></a></li>
+                <li><a href="#"><img src="/static/images/02.png" alt="로그인"></a></li>
+                <li><a href="#"><img src="/static/images/03.png" alt="장바구니"></a></li>
+            </ul>
+            <nav id="pc_nav">
+                <ul id="gnb">
+                    <li>
+                        <a href="sub_menu.html">제품 보기</a>
+                        <ul class="submenu">
+                            <li><a href="sub_menu.html">코롱</a></li>
+                            <li><a href="sub_menu.html">배스 앤 바디</a></li>
+                            <li><a href="sub_menu.html">홈 프레그런스</a></li>
+                            <li><a href="sub_menu.html">맨즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">선물 추천</a>
+                        <ul class="submenu">
+                            <li><a href="#">세트구성</a></li>
+                            <li><a href="#">베스트 셀러</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">미니어처</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_brand.html">브랜드 소개</a>
+                        <ul class="submenu">
+                            <li><a href="sub_brand.html">조말론 기원</a></li>
+                            <li><a href="sub_brand.html">자선활동</a></li>
+                            <li><a href="sub_brand.html">센트 스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">Q &amp; A</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 모바일 메뉴 -->
+            <nav id="m_nav">
+                <ul id="m_gnb">
+                    <li onclick="sideBarSubList(this);">
+                        <a href="#">제품보기</a>
+                        <ul class="m_submenu">
+                            <li><a href="sub_menu.html">코롱</a></li>
+                            <li><a href="sub_menu.html">배스 앤 바디</a></li>
+                            <li><a href="sub_menu.html">홈 프레그런스</a></li>
+                            <li><a href="sub_menu.html">맨즈</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="sideBarSubList(this);">
+                        <a href="#">선물추천</a>
+                        <ul class="m_submenu">
+                            <li><a href="#">세트구성</a></li>
+                            <li><a href="#">베스트 셀러</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">미니어처</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="sideBarSubList(this);">
+                        <a href="#">브랜드소개</a>
+                        <ul class="m_submenu">
+                            <li><a href="sub_brand.html">조말론 기원</a></li>
+                            <li><a href="sub_brand.html">자선활동</a></li>
+                            <li><a href="sub_brand.html">센트 스토리</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="sideBarSubList(this);">
+                        <a href="#">매장안내</a>
+                        <ul class="m_submenu">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="sideBarSubList(this);">
+                        <a href="#">고객센터</a>
+                        <ul class="m_submenu">
+                            <li><a href="#">Q &amp; A</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button id="close" onclick="mobileSideBarClose();">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </nav>
+            <button id="ham" onclick="mobileSideMenuSlide();">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+        <div id="gnb_bg"></div>
+    </div>
+
+    <div id="sub_v_wrap">
+        <div class="inner">
+            <h2>브랜드 소개</h2>
+            <p>홈 &gt; 브랜드 소개</p>
+        </div>
+    </div>
+
+    <div id="sub_cont_wrap" class="inner">
+        <ul id="tab2">
+            <li class="on">조말론 기원</li>
+            <li>자선활동</li>
+            <li>센트 스토리</li>
+        </ul>
+        <div id="sub_brand" class="con on">
+            <div id="br_1_1">
+                <ul>
+                    <li><img src="/static/images/sub_br_01.jpg" alt="1호매장사진"></li>
+                    <li><img src="/static/images/sub_br_02.jpg" alt="너트맥 앤 진저"></li>
+                </ul>
+                <p>조말론 런던 1호점과 조말론 런던의 첫 번째 향이었던 '너트맥 앤 진저'</p>
+            </div>
+            <div id="br_1_2">
+                <h3>조 말론의 역사</h3>
+                <p>
+                    조 말론 런던은 1994년 조향사 조 말론이 런칭한 럭셔리 뷰티 브랜드이다. 월턴 스트리트 154번가 에서 첫 부티크를 오픈하면서 조 말론 런던이 시작되었다. 조 말론은 어머니의 영향으로 향수에 관심을 가지게 되었다. 피부관리사였던 어머니를 도와 페이셜 크림을 만든 것이 시작이었다. 조 말론은 난독증과 어린 동생을 돌보기 위해 학교를 그만두게 되었고, 이후 어머니를 도왔다. 이후 어머니의 건강이 악화되어 자신이 피부관리실을 운영하게 되었고, 이때 직접 만든 샤워 오일이 향기로운 냄새로 입소문을 타게 되었다. 이 일로 조 말론은 자신의 재능을 발견하게 되어 그녀는 향에 집중하기 위해 피부관리실을 정리하고 조향을 배워 1994년 조 말론 런던이라는 브랜드를 론칭했다. 조 말론 런던은 향수 원료로 잘 쓰이지 않던 향들을 사용하며 차별화된 향수를 만들어 영국 상류층의 주목을 받게 되었고, 조 말론은 론칭 1년 만에 목표 매출의 5배를 달성했다.
+                </p>
+            </div>
+            <div id="br_1_3">
+                <h3>센트 페어링(Scent Pairing) 철학</h3>
+                <ul>
+                    <li>
+                        <p>
+                            우리는 자신만의 개성이나 무드의 어느 단면을 표현하고자 프레그런스를 사용합니다. 하지만 우리가 어떤 사람이 되고 싶은 지, 어떤 사람으로 보이고 싶은 지는 하루에도 몇 번씩 바뀌기 마련이죠. 그렇기 때문에 센트 페어링이 조 말론 런던의 DNA에 새겨져 있습니다. 매일 바뀌는 무드에 맞게 나만의 향을 연출하는 것을 가능하게 해줍니다. 조 말론 런던 글로벌 프레그런스 헤드 디렉터 셀린 루(Celine Roux)는 센
+                            트 페어링에 대해 이렇게 말합니다. “센트 페어링을 통한 개인 맞춤화는 우리가 하는 모든 일의 뿌리라고 할 수 있습니다. 아이디어를 내는 초기 단계부터 센트 페어링을 중점으로 두기 때문에 우리가 향을 개발하는 방식이 정말 고유하고 독특하다고 말할 수 있겠네요. 우리는 브랜드의 시초에서부터 비스포크(bespoke, 맞춤화)의 미학을 중시해왔고, 고객이 향을 커스터마이징해서 자신만의 시그니처 향을 즐길 수 있도록 하고 있습니다.”
+                        </p><br>
+                        <img src="/static/images/sub_br_03.jpg" alt="향수이미지">
+                    </li>
+
+                    <li>
+                        <p>
+                            이를 위한 향 제조 과정에서의 핵심은 향의 깨끗함과 투명도에 집중하는 것입니다. 일반적으로 대다수의 향수가 400개 이상의 원료가 포함되어 있는 반면, 조 말론 런던의 향은 그보다 훨씬 적은 원료들로 구성됩니다. 이에 대해서 셀린은 이렇게 설명
+                            했습니다. "재료가 많으면 많을수록 그로부터 만들어지는 건 정체성이 흐려질 수밖에 없습니다. 요리를 하는 과정과 마찬가지죠. 향신료를 계속 첨가하게 되면, 이 요리에 원래 들어있던 게 무엇인지 알 수 없게 되는 것 처럼요."
+                            <br><br>
+                            또한 각각의 향마다 그 향을 대표하는 주요 노트가 있습니다. 조향사가 향을 개발하는 데 있어, 그 노트를 표현할 수 있는 최상의 품질을 가진 원료를 찾는 것이 무엇보다 중요한 일입니다. 그리고 이 주요 향의 원료는 프레그런스의 이름에도 반영이 됩니다. 조 말론 런던 향의 이름을 보면, 대부분 그 향의 주요 원료가 무엇인지 명확하게 알 수 있도록, 아주 직접적으로 표현되어 있습니다. 물론, 그렇다고 향의 이름으로 표기된 그 원료만 들어있는 건 아닙니다. 예를 들어 '그레이프프루트'는 자몽 말고도, 로즈마리와 민트, 베티버 등이 들어가 있습니다. 하지만 이와 같은 향의 네이밍 방식
+                            은 그 향의 주요 노트가 무엇인지 단번에 알 수 있게 해줍니다. 그래서 특정 향조를 찾고, 조합할 향의 레시피를 구상하는 데 도움을 줄 수 있습니다.
+                        </p>
+                        <br>
+                        <ul id="recomm_wrap">
+                            <li>
+                                <span>셀린 루의 추천 페어링 : </span>
+                                <p>
+                                    우드 세이지 앤 씨 솔트는 제가 꾸준히 베이스로 사용하는 향입니다. 저는 늘 저 자신답기 위해 노력하지만, 가끔 다른 면모를 표현하고 싶을 때면 다른 향을 살짝 믹스해줍니다. 다크 앰버 앤 진저 릴리 드라이 바디 오일을 팔에 발라주고 우드 세이지 앤 씨 솔트 코롱과 페어링하면 더욱 관능적인 분위기를 연출할 수 있습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span>카렌 엘슨의 추천 페어링:</span>
+                                <p>
+                                    레드 로즈 바디 크림과 벨벳 로즈 앤 오드 코롱 인텐스의 조합. “레드 로즈 바디 크림을 사용한 후 벨벳 로즈 앤 오드 코롱을 사용해요. 기억을 상기시키는 향이기 때문이죠. 밤을 즐기러 나갈 때 더할 나위 없는 미스테리하고 스모키한 향이 완성돼요."
+                                </p>
+                            </li>
+                            <li>
+                                <span>마스터 퍼퓨머 마리 살라망쥬의 추천 페어링 :</span>
+                                <p>
+                                    라임 바질 앤 만다린 헤어 컨디셔너와 오드 앤 베르가못 코롱 인텐스 , 잉글리쉬 페어 앤 프리지아 코롱의 조합. "저는 항상 이 향들을 머리카락에 사용합니다. 그렇게 하면 향이 훨씬 오래 지속되죠." 이 세 가지 향이 함께하면 마치 최면을 거는 듯한 우디 향조가 매혹적인 프루티 향조와 조합되어 향의 악센트를 만듭니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="sub_brand2" class="con">
+            <img src="/static/images/sub_br_04.jpg" alt="자선활동메인이미지">
+            <div>
+                <h3>우리의 자선활동 미션</h3>
+                <p>
+                    "우리는 정신건강 관련 활동을 지원하고, 개인적인 고통을 안고 살아가는 이들에게 자연이 줄 수 있는 긍정적인 효과를 널리 알릴 수 있도록 최선을 다하고 있습니다. 관련된 인식을 제고하고, 다양한 지원을 제공하며, 부정적인 인식을 타파할 수 있도록 천천히 한 걸음씩 나아가고 있습니다.
+                    우리는 오랫동안 자연으로부터 영감을 얻어왔습니다. 다양한 꽃과 식물의 존재 자체는 생명이 예상치 못한 상황에서도 아름다울 수 있다는 사실을 일깨워줍니다. 하지만 예상치 못한 어려움 또한 닥칠 수 있죠. 모든 상처가 눈에 다 보이는 것은 아닙니다. 네 명 중 한 명꼴로 살아가면서 정신 건강 상의 문제로 영향을 받을 수 있다고 합니다. 그럼에도 불구하고 이러한 질병에 대한 충분한 재정 지원이나 사회적 인식은 아직은 부족한 실정입니다. 조 말론 런던은 이러한 금기를 깨는데 일조하고자 합니다. 우리의 사명은 언제나 향을 통해 사람들에게 영감을 주고, 연결고리를 제공하고 행복감을 선사하는 것입니다. 따라서 지난 10년 동안 정신 건강 관련 자선단체들과 협업을 해온 것은 이러한 사명을 실천하는 데 있어 자연스러운 수순이었습니다. 지역사회의 가장 취약한 구성원들을 보듬고 함께 나아가는 것. 사람들이 자신의 감정에 대해 자연스럽게 말할 수 있도록 돕는 것. 그리고 사람들이 자연의 긍정적인 효과들을 발견할 수 있는 정원들을 잘 가꾸어 나갈 수 있도록 노력해왔습니다. 현재까지 조 말론 런던은 338만 달러를 정신건강 관련 단체에 기부하며 인식 제고는 물론 낙인을 찍는 관행에 맞서왔습니다. 필요한 지원을 제공하고, 사람들에게 회복할 수 있는 힘을 주고. 다시 서로 소통하며, 성장해 나갈 수 있도록 말이죠.
+                </p>
+            </div>
+            <br><hr><br>
+            <div>
+                <ul>
+                    <li>
+                        <h3>정신건강 관련 활동 지원<br>10주년을 기념하며</h3>
+                    </li>
+                    <li>
+                        <p>
+                            조 말론 런던은 그 어느 때보다 정신건강 관련 활동에 적극 나서고 있습니다. 그리고 이런 와중에 조 말론 런던이 후원하는 정신건강 문제 해결을 위한 재단(Shining A Light On Mental Health Foundation) 설립 소식을 발표하게 되어 매우 기쁘게 생각합니다. 본 재단은 다양한 영감을 선사하는 자선단체들과 함께 진행하는 특별 프로젝트를 통해 정신건강 관련 문제를 겪고 있는 개인과 가정에 필요한 도움을 지원합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            이에 더해, 2022년 10월 10일 월요일 그리고 2023년 10월 9일 월요일, 2백만 달러를 기부할 계획입니다. 이 중 백만 달러는 조 말론 런던의 새로운 글로벌 자선 파트너인 UNICEF에 전달되며, 나머지 백만 달러는 우리의 채러티 캔들 컬렉션을 통해 각 지역의 자선단체를 통해 기부될 예정입니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <br><hr><br>
+            <div>
+                <ul>
+                    <li>
+                        <h3>조 말론 런던의<br>글로벌 채러티 파트너</h3>
+                    </li>
+                    <li>
+                        <p>
+                            조 말론 런던은 현재 본국인 영국에서 11개의 자선단체를 후원하고 있습니다. 2021년부터는 세계 곳곳에 채러티 파트너들과 협업하고 있습니다. 정신 건강과 관련된 인식 제고, 예방 및 치료에 초점을 맞춘 프로젝트 등을 지원하고 있습니다. 특히 우리는 정신 건강 관련 자선단체, 그리고 정원과 안전한 야외 공간과 관련된 프로젝트에 중점을 두고 있습니다. 정원과 정신 건강 사이의 관계는 조 말론 런던이 진행하는 사회적 임팩트 프로그램의 기반이 됩니다. 우리가 지원하는 야외공간들은 항상 누구든지 오갈 수 있는 개방된 공간이어야 하고, 정원의 유지와 케어는 클라이언트 정원사들을 위한 원예 테라피의 일부가 됩니다. 비록 모든 클라이언트 파트너와 프로젝트가 정원과 연관이 있는 것은 아닐 수 있지만, 정신 건강 증진에 뿌리를 두고 있는 것만큼은 모두 같습니다. 조 말론 런던이 후원하는 인식 제고를 위해 노력하고 있는 자선단체들은 (영국에 위치한 안나 프로이트 센터와 같은) 정신 건강과 관련된 부정적인 인식을 줄이고, 조기 신호에 대한 인식 제고 그리고 사람들이 자신의 정신 건강에 대해 공공연히 말할 수 있는 분위기를 조성하고 도움을 요청할 수 있도록 지원하고 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            정신건강 문제의 75%가 18세가 되기 이전에 발현되는 만큼, 위험도가 높은 집단 및 아이들에 대한 문제 예방에 초점을 둔 단체들도 있습니다. 영국의 NSPCC나 일본의 '미래의 숲(未来の森)'과 같은 단체들 말이죠. 치료 제공과 관련해서는, 영국의 쓰라이브나 북미지역의 파운틴 하우스(Fountain House)와 같이 정신건강에 어려움을 겪는 이들에게 일상적인 소속감과 성취감을 부여하기 위해 노력하는 자선 단체 및 프로젝트 그룹과 협업하고 있습니다. 비록 우리가 지원 가운데 금전적인 부분의 비중이 높기는 하지만, 일부 자선단체의 경우에 다양한 형태의 자원을 제공하고 있습니다. 여러 프로그램에서 조 말론 런던 직원들이 자원봉사에 나서고 있으며 후원 행사나 자선 판매 행사에 적극 참여하면서 관용을 베풀고자 노력하고 있습니다. 우리의 모든 파트너들에게 조언과 상담을 제공하여, 추진 중인 이니셔티브와 관련된 소통, 행사 기획 그리고 인식 제고와 관련하여 필요한 지원을 받을 수 있도록 돕는 것을 기쁘게 생각합니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ul id="sub_brand3">
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_05.jpg" alt="센트스토리1">
+                        <h3>장미와 함께 마음을 전해보세요</h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_06.jpg" alt="센트스토리2">
+                        <h3>
+                            글로벌 프레그런스 디렉터 셀린 루(Céline Roux)가 전하는 조 말론 런던의 영원히 사랑받는 향기, 잉글리쉬 페어 앤 프리지아에 대한 이야기
+                        </h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_07.jpg" alt="센트스토리3">
+                        <h3>정원의 보물 - <span>루바브 이야기</span></h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_08.jpg" alt="센트스토리4">
+                        <h3>과일 추출물 - <span>프레그런스 조향 기술</span></h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_10.jpg" alt="센트스토리5">
+                        <h3>사랑에 빠지는 향의 비밀</h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/static/images/sub_br_09.jpg" alt="센트스토리6">
+                        <h3>축제의 즐거움 - <span>마멀레이드 드림</span></h3>
+                        <p>더 알아보기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="ft_wrap">
+        <footer class="inner">
+            <div id="c_logo">
+                <div id="ft1">
+                    <img src="/static/images/f_logo.jpg" alt="flogo">
+                </div>
+                <div id="c_logo_b">
+                    <div id="ft2">
+                        <p>© Jo Malone London 2021</p>
+                    </div>
+                    <div id="ft3">
+                        <p><a href="#">개인정보보호</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="add_wrap">
+                <div>
+                이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 <br>
+                사업자등록번호: 211-81-71889 <br>
+                통신판매업신고번호: 강남-15737호 <br>
+                사업자정보조회<br>
+                <span>고객관리지원팀: <a href="#">(02) 6971-3228</a> , <a href="#">consumercare-kr@jomalone.com</a></span> <br>
+                호스팅서비스 사업자: ㈜엘지유플러스 <br>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <button class="btn_top" onclick="pageMoveTop();">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+</body>
+</html>

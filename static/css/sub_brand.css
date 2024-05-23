@@ -1,0 +1,205 @@
+#sub_v_wrap {
+    height: 240px;
+    background: url("/static/images/sub_brand_visual.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#sub_v_wrap h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sub_v_wrap p {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+}
+
+#sub_v_wrap div {
+    height: 100%;
+}
+
+#sub_cont_wrap {
+    padding: 50px 0;
+}
+
+#tab2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+#tab2 li {
+    width: 204px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    margin: 0 10px;
+    background-color: #d8d8d8;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#tab2 li:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+#tab2 li.on {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* 조말론기원 */
+
+#sub_brand > div {
+    margin-bottom: 20px;
+}
+
+#sub_brand > div h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#br_1_1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#br_1_1 ul li:first-child {
+    width: 62%;
+}
+
+#br_1_1 ul li:last-child {
+    width: 37%;
+}
+
+#br_1_1 ul img {
+    width: 100%;
+}
+
+#br_1_1 p {
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    padding: 5px 10px;
+}
+
+#br_1_3 > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#br_1_3 > ul > li {
+    width: 49%;
+}
+
+#br_1_3 > ul img {
+    width: 100%;
+}
+
+#recomm_wrap li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#recomm_wrap li span {
+    display: block;
+    width: 176px;
+}
+
+#recomm_wrap li p {
+    width: calc(100% - 176px - 2px);
+}
+
+/* 자선활동 */
+
+#sub_brand2 img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#sub_brand2 h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#sub_brand2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub_brand2 ul > li {
+    width: 32%;
+}
+
+/* 센트 스토리 */
+
+#sub_brand3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#sub_brand3 > li {
+    width: 49%;
+}
+
+#sub_brand3 > li > a {
+    display: block;
+}
+
+#sub_brand3 > li > a:hover img {
+    opacity: 0.8;
+}
+
+#sub_brand3 > li img {
+    width: 100%;
+}
+
+#sub_brand3 > li h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+#sub_brand3 > li p {
+    margin: 20px 0;
+    color: #323232;
+    text-decoration: underline;
+}
+
+#sub_brand3 > li span {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.con {
+    display: none;
+}
+
+.con.on {
+    display: block;
+}
+
+.btn_top {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    font-size: 35px;
+    display: none;
+}
